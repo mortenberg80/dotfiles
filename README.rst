@@ -1,5 +1,5 @@
 Installation:
-    git clone 
+    git clone git@github.com:mortenberg80/dotfiles.git
 
 Linking files:
     ln -s dotfiles/gitconfig .gitconfig
