@@ -1,0 +1,38 @@
+[user]
+    name = Morten Berg
+    email = mortenberg80@gmail.com
+[core]
+    editor = vim
+    filemode = false
+    symlinks = false
+    autocrlf = false
+[color]
+    ui = auto
+[push]
+    default = upstream
+[branch]
+    autosetuprebase = never #never, local, remote, always
+# Use kdiff3 when on windows
+# ==========================
+[merge]
+    tool = kdiff3
+[mergetool "kdiff3"]
+    path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+# 	path = c:/Program Files (x86)/KDiff3/kdiff3.exe
+    args = $base $local $other -o $output
+    keepBackup = false
+    trustExitCode = false
+
+[alias]
+    st = !git status -sb
+    ci = !git commit
+    co = !git checkout
+    di = !git diff
+    dc = !git diff --staged
+    unstage = !git reset head --
+    rank = !git shortlog -s -n --no-merges
+    w = !git whatchanged --oneline
+    l = "!source ~/.githelpers && pretty_git_log"
+    la = "!git l --all"
+    r = "!git l -30"
+    ra = "!git -r --all"
