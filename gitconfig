@@ -24,14 +24,14 @@
     trustExitCode = false
 
 [alias]
-    st = !git status -sb
-    ci = !git commit
-    co = !git checkout
-    di = !git diff
-    dc = !git diff --staged
-    unstage = !git reset head --
-    rank = !git shortlog -s -n --no-merges
-    w = !git whatchanged --oneline
+    st = status -sb
+    ci = commit
+    co = checkout
+    di = diff
+    dc = diff --staged
+    unstage = reset head --
+    rank = shortlog -s -n --no-merges
+    w = whatchanged --oneline
     l = "!source ~/.githelpers && pretty_git_log"
     la = "!git l --all"
     r = "!git l -30"
