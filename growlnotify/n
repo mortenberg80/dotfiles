@@ -1,0 +1,16 @@
+#!/bin/bash
+
+$@
+STATUS=$?
+PRIORITY=0
+
+if [ $STATUS -eq 0 ]
+then
+	VSTATUS=SUCCEEDED
+else
+	VSTATUS=FAILED
+  PRIORITY=2
+fi
+
+growlnotify /p:$PRIORITY /s:true /t:"Task $1 ${VSTATUS}" "\$ $*"
+exit $STATUS
