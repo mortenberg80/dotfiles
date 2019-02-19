@@ -17,8 +17,7 @@
 [merge]
     tool = kdiff3
 [mergetool "kdiff3"]
-    path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
-# 	path = c:/Program Files (x86)/KDiff3/kdiff3.exe
+    path = /usr/local/bin/kdiff3
     args = $base $local $other -o $output
     keepBackup = false
     trustExitCode = false
