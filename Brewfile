@@ -6,13 +6,13 @@
  
  
 #tap 'homebrew/cask' # Is apparently no longer needed
-tap 'homebrew/cask-versions'
-tap 'AdoptOpenJDK/openjdk'
+#tap 'homebrew/cask-versions'
+#tap 'AdoptOpenJDK/openjdk'
 tap 'common-fate/granted'
  
-cask 'temurin@21'
-cask 'temurin'
-cask 'temurin17'
+#cask 'temurin@21'
+#cask 'temurin'
+#cask 'temurin17'
 #cask 'rectangle-pro'
 cask 'moom'
 cask 'firefox'
@@ -31,7 +31,7 @@ cask 'raycast'
 #cask 'spotify'
 cask 'kap'
 cask 'contexts'
-cask 'granted' # AWS tool
+#cask 'granted' # AWS tool
  
 #brew 'node@18'
 brew 'awscli'
@@ -46,6 +46,11 @@ brew 'maven'
 brew 'fzf'
 brew 'jq'
 brew 'wget'
-brew 'kdiff3'
+#brew 'kdiff3'
 brew 'httpie'
-#brew 'sdkman'
+brew 'granted'
+brew 'ag'
+#brew 'devutils'
+brew 'tfenv'
+brew 'starship'
+
